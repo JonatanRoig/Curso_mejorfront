@@ -1,13 +1,99 @@
-gris_oscuro = #444
+azul = #22BCE0;
+gris_oscuro = #444;
+naranja = #DD4F42
 
-body 
-	background blue
-	color gris_oscuro
-	font-family Arial
-	font-size 16px
+body {
+	background: #E8E8E8;
+	color: gris_oscuro;
+	font-family: Arial;
+	font-size: 16px;
+
+}
 
 header
 	background gris_oscuro
 	color white
+	overflow hidden
 	padding 0.5em
-	
+	position relative
+
+	.logo
+		border-right 1px solid azul
+		width 60px
+		float left
+
+		img
+			width 52px
+
+	.titular
+		margin 0 60px 0 70px
+
+		.filtro
+			color azul
+			text-decoration none
+			font-weight bold
+			font-style italic
+
+		.publicar
+			background naranja
+			color white
+			margin -5px 1em 0 0
+			padding 0.2em 0.5em
+			text-decoration none
+			font-style italic
+			text-shadow 1px 1px 0px black
+			float: right
+
+		.titulo
+			font-size 18px;
+			font-weight normal
+			margin 0
+			padding 0
+
+
+	.usuario
+		position absolute
+		right: 10px
+		top: 10px
+
+		.avatar
+			position: relative
+			margin 0 1em 0 0
+			z-index: 2
+
+			img
+				width 50px
+				border-radius 50%
+
+		.flechita
+			position: absolute
+			display: block
+			width: 2em
+			top 15px
+			padding 3px
+			right 0
+			width: 50%
+			color white
+			background naranja
+			text-align right
+
+nav
+	background: azul
+
+	.menu
+		margin 0
+		height 40px
+		padding 0
+		line-height 40px
+		overflow-x auto
+		white-space nowrap
+
+		li
+			display inline-block
+
+			a 
+				color white
+				padding 0
+				margin 0 0.5em
+				text-decoration none
+				display inline-block

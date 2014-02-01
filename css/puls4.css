@@ -1,2 +1,16 @@
-body{background:#00f;color:#444;font-family:Arial;font-size:16px}
-header{background:#444;color:#fff;padding:.5em}
+body{background:#e8e8e8;color:#444;font-family:Arial;font-size:16px}
+header{background:#444;color:#fff;overflow:hidden;padding:.5em;position:relative;}
+header .logo{border-right:1px solid #22bce0;width:60px;float:left;}
+header .logo img{width:52px}
+header .titular{margin:0 60px 0 70px;}
+header .titular .filtro{color:#22bce0;text-decoration:none;font-weight:bold;font-style:italic}
+header .titular .publicar{background:#dd4f42;color:#fff;margin:-5px 1em 0 0;padding:.2em .5em;text-decoration:none;font-style:italic;text-shadow:1px 1px 0 #000;float:right}
+header .titular .titulo{font-size:18px;font-weight:normal;margin:0;padding:0}
+header .usuario{position:absolute;right:10px;top:10px;}
+header .usuario .avatar{position:relative;margin:0 1em 0 0;z-index:2;}
+header .usuario .avatar img{width:50px;border-radius:50%}
+header .usuario .flechita{position:absolute;display:block;width:2em;top:15px;padding:3px;right:0;width:50%;color:#fff;background:#dd4f42;text-align:right}
+nav{background:#22bce0;}
+nav .menu{margin:0;height:40px;padding:0;line-height:40px;overflow-x:auto;white-space:nowrap;}
+nav .menu li{display:inline-block;}
+nav .menu li a{color:#fff;padding:0;margin:0 .5em;text-decoration:none;display:inline-block}
