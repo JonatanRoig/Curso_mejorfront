@@ -1,16 +1,50 @@
+@font-face{font-family:'iconitos';src:url("../fonts/icomoon.eot?vbxv8q");src:url("../fonts/icomoon.eot?#iefixvbxv8q") format('embedded-opentype'),url("../fonts/icomoon.woff?vbxv8q") format('woff'),url("../fonts/icomoon.ttf?vbxv8q") format('truetype'),url("../fonts/icomoon.svg?vbxv8q#icomoon") format('svg');font-weight:normal;font-style:normal}
 body{background:#e8e8e8;color:#444;font-family:Arial;font-size:16px}
-header{background:#444;color:#fff;overflow:hidden;padding:.5em;position:relative;}
+a{color:#dd4f42}
+header{background:#444;box-shadow:0 5px 0 rgba(0,0,0,0.2);color:#fff;overflow:hidden;padding:.5em;position:relative;z-index:1;}
 header .logo{border-right:1px solid #22bce0;width:60px;float:left;}
 header .logo img{width:52px}
 header .titular{margin:0 60px 0 70px;}
 header .titular .filtro{color:#22bce0;text-decoration:none;font-weight:bold;font-style:italic}
 header .titular .publicar{background:#dd4f42;color:#fff;margin:-5px 1em 0 0;padding:.2em .5em;text-decoration:none;font-style:italic;text-shadow:1px 1px 0 #000;float:right}
+header .titular .publicar:before{display:inline-block;margin:0 3px 0 0;font-family:"iconitos";content:"\e600"}
 header .titular .titulo{font-size:18px;font-weight:normal;margin:0;padding:0}
 header .usuario{position:absolute;right:10px;top:10px;}
 header .usuario .avatar{position:relative;margin:0 1em 0 0;z-index:2;}
 header .usuario .avatar img{width:50px;border-radius:50%}
-header .usuario .flechita{position:absolute;display:block;width:2em;top:15px;padding:3px;right:0;width:50%;color:#fff;background:#dd4f42;text-align:right}
-nav{background:#22bce0;}
-nav .menu{margin:0;height:40px;padding:0;line-height:40px;overflow-x:auto;white-space:nowrap;}
+header .usuario .flechita{text-decoration:none;position:absolute;display:block;width:2em;top:15px;padding:1.5px;right:0;width:50%;color:#fff;background:#dd4f42;text-align:right}
+header .usuario .flechita:before{font-family:iconitos;content:"\e603";text-shadow:1px 1px 0 #000}
+nav{background:#22bce0;border-left:15px solid #fff;position:relative;}
+nav:before{position:absolute;border-bottom:20px solid transparent;border-left:7px solid #fff;border-top:20px solid transparent;content:""}
+nav .menu{margin:0;margin-left:15px;height:40px;padding:0;line-height:40px;overflow-x:auto;white-space:nowrap;}
 nav .menu li{display:inline-block;}
 nav .menu li a{color:#fff;padding:0;margin:0 .5em;text-decoration:none;display:inline-block}
+.posts{padding:.5em;}
+.posts .post{margin-bottom:1em;background:#fff;border-radius:0 0 .5em .5em;color:#7a7a7a;box-shadow:2px 2px 10px rgba(0,0,0,0.5);}
+.posts .post .acciones{border-top:3px solid #22bce0;padding:.5em;overflow:hidden;}
+.posts .post .acciones .datos{float:right;}
+.posts .post .acciones .datos .comentarios{position:relative;background:#7a7a7a;color:#fff;padding:2px 5px;text-decoration:none;border-radius:3px;margin:0 1em 0 0;}
+.posts .post .acciones .datos .comentarios:before{position:absolute;top:21px;left:16px;border-right:4px solid transparent;border-top:5px solid #7a7a7a;border-left:4px solid transparent;content:""}
+.posts .post .acciones .datos .estrellita{text-decoration:none;color:#f7e853;}
+.posts .post .acciones .datos .estrellita:after{font-family:"iconitos";content:"\e601"}
+.posts .post .acciones .votos{float:left;}
+.posts .post .acciones .votos .up,.posts .post .acciones .votos .down{font-size:1.5em;text-decoration:none;vertical-align:bottom}
+.posts .post .acciones .votos .down{color:#f00;}
+.posts .post .acciones .votos .down:before{font-family:iconitos;content:"\e603"}
+.posts .post .acciones .votos .up{color:#008000;}
+.posts .post .acciones .votos .up:before{font-family:iconitos;content:"\e602"}
+.posts .post .descripcion{color:#7a7a7a;}
+.posts .post .descripcion .detalles{height:160px;margin-left:130px;}
+.posts .post .descripcion .detalles .autor{margin:.5em 0 2em 0}
+.posts .post .descripcion .detalles .tag{background:#22bce0;text-decoration:none;color:#fff;padding:.2em .5em;border-radius:.5em}
+.posts .post .descripcion .detalles .fecha{float:right;margin:0 1em 0 0}
+.posts .post .descripcion .detalles .titulo{font-size:18px;font-style:italic;color:#444;margin:0;padding:.5em .5em 0 0}
+.posts .post .descripcion .imagen{float:left;}
+.posts .post .descripcion .imagen img{vertical-align:top;height:160px;width:120px}
+footer{background:#dd4f42;color:rgba(255,255,255,0.5);text-align:center;height:70px;padding-top:10px;bottom:0;width:100%;}
+footer h3{font-size:14px;font-weight:normal;}
+footer h3 strong{display:block}
+footer h3 .mejor:before,footer h3 .mejor:after{content:" - "}
+@media screen and (min-width: 768px){.posts .post{width:48%;vertical-align:top;display:inline-block;}
+.posts .post:nth-child(odd){margin-right:2%}
+}
